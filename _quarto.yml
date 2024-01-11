@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+  render: 
+    - "*/index.qmd"
+    - "index.qmd"
+
+website:
+  title: Chisocnet Summer School 2024 -- ERGMs
+  
+  navbar: 
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Fundamentals
+        href: 00-fundamentals/index.qmd
+      - text: Introduction
+        href: 04-intro-to-ergms/index.qmd
+      - text: Advanced topics
+        href: 05-advanced-ergms/index.qmd
+      - text: New developments
+    right:
+      - icon: github
+        href: https://github.com/gvegayon/chisocnet-ergms2024
+
+format:
+  html:
+    html-math-method: katex
+    bibliography: ../references.bib
+    toc: true
+    number-sections: true
+    embed-resources: true

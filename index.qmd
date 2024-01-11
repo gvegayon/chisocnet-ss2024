@@ -1,0 +1,23 @@
+---
+nocite: |
+  @*
+bibliography: references.bib
+title: Home
+---
+
+Welcome to the first version of ChiSocNet's Summer School! This website was created for the ERGMs component of the school. Here, you will find three subpages with the following content: (1) Fundamentals about R and Statistics, (2) Introduction to ERGMs, (3) Advanced ERGMs, and (4) New topics in Network Modeling.
+
+# References
+
+Although not all about ERGMs, the following list of references is an excellent resource for statistical inference in network science.
+
+::: {#refs}
+:::
+
+# Disclaimer
+
+This is an ongoing project. The course is being developed and will be updated as we go. If you have any comments or suggestions, please let me know. The generation of the course materials was assisted by AI tools, namely, GitHub copilot.
+
+# Code of Conduct
+  
+Please note that the networks-udd2024 project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
