@@ -19,7 +19,7 @@ website:
       - text: Advanced topics
         href: 05-advanced-ergms/index.qmd
       - text: New developments
-        href: 06-new-topics/index.qmd
+        # href: 06-new-topics/index.qmd
     right:
       - icon: github
         href: https://github.com/gvegayon/chisocnet-ergms2024
