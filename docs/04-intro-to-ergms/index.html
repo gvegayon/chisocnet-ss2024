@@ -4537,8 +4537,10 @@ vertical-align: -.125em;
     <a class="nav-link" href="../05-advanced-ergms/index.html" rel target>
  <span class="menu-text">Advanced topics</span></a>
   </li>  
-  <li class="dropdown-header">
- <span class="menu-text">New developments</span></li>
+  <li class="nav-item">
+    <a class="nav-link" href="../06-new-topics/index.html" rel target>
+ <span class="menu-text">New developments</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -4619,7 +4621,7 @@ P_{\mathcal{Y}, \bm{\theta}}(\bm{Y}=\bm{y}) =  \exp\left(\bm{\theta}^{\mathbf{t}
 \kappa(\bm{\theta}) = \sum_{\bm{y} \in \mathcal{Y}} \exp\left(\bm{\theta}^{\mathbf{t}} s(\bm{y})\right)
 </span></p>
 <p>From the statistical point of view, the normalizing constant makes this model attractive; only cases where <span class="math inline">\mathcal{Y}</span> is small enough to be enumerated are feasible <span class="citation" data-cites="vegayonExponentialRandomGraph2021">(<a href="#ref-vegayonExponentialRandomGraph2021" role="doc-biblioref">Vega Yon, Slaughter, and Haye 2021</a>)</span>. Because of that reason, estimating ERGMs is a challenging task.</p>
-<p>In more simple terms, ERG models resemble Logistic regressions. The term <span class="math inline">\bm{\theta}^{\mathbf{t}} s(\bm{y})</span> is simply the sum of the product between the parameters and the statistics (like you would see in a Logistic regression,) and its key component is the composition of the vector of sufficient statistics, <span class="math inline">s(\bm{y})</span>. The latter is what defines the model.</p>
+<p>In more simple terms, ERG models resemble Logistic regressions. The term <span class="math inline">\bm{\theta}^{\mathbf{t}} s(\bm{y})</span> is the sum of the product between the parameters and the statistics (like you would see in a Logistic regression,) and its key component is the composition of the vector of sufficient statistics, <span class="math inline">s(\bm{y})</span>. The latter is what defines the model.</p>
 <p>The vector of sufficient statistics dictates the data-generating process of the network. Like the mean and variance characterize the normal distribution, sufficient statistics (and corresponding parameters) characterize the ERG distribution. <a href="#fig-ergmterms">Figure 1</a> shows some examples of sufficient statistics with their corresponding parametrizations.</p>
 <div id="fig-ergmterms" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -4645,7 +4647,7 @@ P_{\mathcal{Y}, \bm{\theta}}(\bm{Y}=\bm{y}) =  \exp\left(\bm{\theta}^{\mathbf{t}
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">avg   =</span> <span class="fu">mean</span>(Y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">qlogis</span>()</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="do">##                 logit      ergm       avg</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="do">## (Intercept) -2.134827 -2.134827 -2.134827</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="do">## (Intercept) -2.144477 -2.144477 -2.144477</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>When we see this, we say that dyads are independent of each other; this is also called <em>p1</em> models <span class="citation" data-cites="Holland1981">(<a href="#ref-Holland1981" role="doc-biblioref">Holland and Leinhardt 1981</a>)</span>. As a second example, imagine that we are interested in assessing whether gender homophily (the tendency between individuals of the same gender to connect) is present in a network. ERG models are the right tool for this task. Moreover, if we assume that gender homophily is the only mechanism that governs the network, the problem reduces to a Logistic regression:</p>
 <p><span class="math display">
@@ -4783,7 +4785,7 @@ P_{\mathcal{Y}, \bm{\theta}}(Y_{ij}=1 | \bm{y}_{-ij}) = \frac{1}{1 + \exp \left(
 l(\bm{\theta}) - l(\bm{\theta}_0) = &amp; (\bm{\theta} - \bm{\theta}_0)^{\mathbf{t}}s(\bm{y}) - \log\left[\frac{\kappa(\bm{\theta})}{\kappa(\bm{\theta}_0)}\right]\\
 \approx &amp; (\bm{\theta} - \bm{\theta}_0)^{\mathbf{t}}s(\bm{y}) - \log\left[M^{-1}\sum_{\bm{y}^{(m)}} (\bm{\theta} - \bm{\theta}_0)^{\mathbf{t}}s(\bm{y}^{(m)})\right]
 \end{align*}</span></p>
-<p>Where <span class="math inline">\bm{\theta}_0</span> is an arbitrary vector of parameters, and <span class="math inline">\bm{y}^{(m)}</span> are sampled from the distribution <span class="math inline">P_{\mathcal{Y}, \bm{\theta}_0}</span>. In the words of <span class="citation" data-cites="geyerConstrainedMonteCarlo1992">Geyer and Thompson (<a href="#ref-geyerConstrainedMonteCarlo1992" role="doc-biblioref">1992</a>)</span>, “[…] it is possible to approximate <span class="math inline">\bm{\theta}</span> by using simulations from one distribution <span class="math inline">P_{\mathcal{Y}, \bm{\theta}_0}</span> no matter which <span class="math inline">\bm{\theta}_0</span> in the parameter space is.”</p>
+<p>Where <span class="math inline">\bm{\theta}_0</span> is an arbitrary vector of parameters, and <span class="math inline">\bm{y}^{(m)}</span> are sampled from the distribution <span class="math inline">P_{\mathcal{Y}, \bm{\theta}_0}</span>. In the words of <span class="citation" data-cites="geyerConstrainedMonteCarlo1992">Geyer and Thompson (<a href="#ref-geyerConstrainedMonteCarlo1992" role="doc-biblioref">1992</a>)</span>, “[…] it is possible to approximate <span class="math inline">\bm{\theta}</span> by using simulations from one distribution <span class="math inline">P_{\mathcal{Y}, \bm{\theta}_0}</span> no matter which <span class="math inline">\bm{\theta}_0</span> in the parameter space is.” This result has been key for the MC-MLE algorithm (see <span class="citation" data-cites="hunterComputationalStatisticalMethods2012">Hunter, Krivitsky, and Schweinberger (<a href="#ref-hunterComputationalStatisticalMethods2012" role="doc-biblioref">2012</a>)</span>), which has been front and center in the <code>ergm</code> R package.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </section>
 </section>
 <section id="start-to-finish-example" class="level1" data-number="4">
@@ -5999,6 +6001,12 @@ Holland, Paul W., and Samuel Leinhardt. 1981. <span>“<span class="nocase">An e
 <div id="ref-hunterCurvedExponentialFamily2007" class="csl-entry" role="listitem">
 Hunter, David R. 2007. <span>“Curved Exponential Family Models for Social Networks.”</span> <em>Social Networks</em> 29 (2): 216–30. <a href="https://doi.org/10.1016/j.socnet.2006.08.005">https://doi.org/10.1016/j.socnet.2006.08.005</a>.
 </div>
+<div id="ref-hunterComputationalStatisticalMethods2012" class="csl-entry" role="listitem">
+Hunter, David R., Pavel N. Krivitsky, and Michael Schweinberger. 2012. <span>“Computational Statistical Methods for Social Network Models.”</span> <em>Journal of Computational and Graphical Statistics</em> 21 (4): 856–82. <a href="https://doi.org/10.1080/10618600.2012.732921">https://doi.org/10.1080/10618600.2012.732921</a>.
+</div>
+<div id="ref-krivitskyUsingContrastiveDivergence2017" class="csl-entry" role="listitem">
+Krivitsky, Pavel N. 2017. <span>“Using Contrastive Divergence to Seed <span>Monte Carlo MLE</span> for Exponential-Family Random Graph Models.”</span> <em>Computational Statistics &amp; Data Analysis</em> 107 (March): 149–61. <a href="https://doi.org/10.1016/j.csda.2016.10.015">https://doi.org/10.1016/j.csda.2016.10.015</a>.
+</div>
 <div id="ref-leifeldTexregConversionStatistical2013" class="csl-entry" role="listitem">
 Leifeld, Philip. 2013. <span>“<span><strong>Texreg</strong></span> : <span>Conversion</span> of <span>Statistical Model Output</span> in <span><em>R</em></span> to <span>L A T E X</span> and <span>HTML Tables</span>.”</span> <em>Journal of Statistical Software</em> 55 (8). <a href="https://doi.org/10.18637/jss.v055.i08">https://doi.org/10.18637/jss.v055.i08</a>.
 </div>
@@ -6021,6 +6029,7 @@ Wasserman, Stanley, and Philippa Pattison. 1996. <span>“<span class="nocase">L
 
 <ol>
 <li id="fn1"><p>While ERG Models can be used to predict individual ties (which is another way of describing them), the focus is on the processes that give origin to the network.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Although later versions of the <code>ergm</code> package use the contrastive divergence by <span class="citation" data-cites="krivitskyUsingContrastiveDivergence2017">Krivitsky (<a href="#ref-krivitskyUsingContrastiveDivergence2017" role="doc-biblioref">2017</a>)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

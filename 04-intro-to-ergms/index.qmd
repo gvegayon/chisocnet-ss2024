@@ -45,7 +45,7 @@ $$
 
 From the statistical point of view, the normalizing constant makes this model attractive; only cases where $\mathcal{Y}$ is small enough to be enumerated are feasible [@vegayonExponentialRandomGraph2021]. Because of that reason, estimating ERGMs is a challenging task.
 
-In more simple terms, ERG models resemble Logistic regressions. The term $\tpose{\thetas} s(\y)$ is simply the sum of the product between the parameters and the statistics (like you would see in a Logistic regression,) and its key component is the composition of the vector of sufficient statistics, $s(\y)$. The latter is what defines the model.
+In more simple terms, ERG models resemble Logistic regressions. The term $\tpose{\thetas} s(\y)$ is the sum of the product between the parameters and the statistics (like you would see in a Logistic regression,) and its key component is the composition of the vector of sufficient statistics, $s(\y)$. The latter is what defines the model.
 
 The vector of sufficient statistics dictates the data-generating process of the network. Like the mean and variance characterize the normal distribution, sufficient statistics (and corresponding parameters) characterize the ERG distribution. @fig-ergmterms shows some examples of sufficient statistics with their corresponding parametrizations.
 
@@ -235,7 +235,9 @@ l(\bm{\theta}) - l(\bm{\theta}_0) = & \tpose{(\bm{\theta} - \bm{\theta}_0)}s(\bm
 \end{align*}
 
 
-Where $\bm{\theta}_0$ is an arbitrary vector of parameters, and $\bm{y}^{(m)}$ are sampled from the distribution $P_{\mathcal{Y}, \bm{\theta}_0}$. In the words of @geyerConstrainedMonteCarlo1992, "[...] it is possible to approximate $\bm{\theta}$ by using simulations from one distribution $P_{\mathcal{Y}, \bm{\theta}_0}$ no matter which $\bm{\theta}_0$ in the parameter space is."
+Where $\bm{\theta}_0$ is an arbitrary vector of parameters, and $\bm{y}^{(m)}$ are sampled from the distribution $P_{\mathcal{Y}, \bm{\theta}_0}$. In the words of @geyerConstrainedMonteCarlo1992, "[...] it is possible to approximate $\bm{\theta}$ by using simulations from one distribution $P_{\mathcal{Y}, \bm{\theta}_0}$ no matter which $\bm{\theta}_0$ in the parameter space is." This result has been key for the MC-MLE algorithm (see @hunterComputationalStatisticalMethods2012), which has been front and center in the `ergm` R package.[^cd]
+
+[^cd]: Although later versions of the `ergm` package use the contrastive divergence by @krivitskyUsingContrastiveDivergence2017.
 
 # Start to finish example
 
