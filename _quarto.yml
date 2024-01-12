@@ -22,7 +22,7 @@ website:
         href: 03-new-topics/index.qmd
     right:
       - icon: github
-        href: https://github.com/gvegayon/chisocnet-ergms2024
+        href: https://github.com/gvegayon/chisocnet-ss2024
 
 format:
   html:
