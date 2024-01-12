@@ -15,11 +15,11 @@ website:
       - text: Fundamentals
         href: 00-fundamentals/index.qmd
       - text: Introduction
-        href: 04-intro-to-ergms/index.qmd
+        href: 01-intro-to-ergms/index.qmd
       - text: Advanced topics
-        href: 05-advanced-ergms/index.qmd
+        href: 02-advanced-ergms/index.qmd
       - text: New developments
-        # href: 06-new-topics/index.qmd
+        href: 03-new-topics/index.qmd
     right:
       - icon: github
         href: https://github.com/gvegayon/chisocnet-ergms2024
