@@ -1,0 +1,5 @@
+{
+    "r.plot.useHttpgd": true,
+    "r.alwaysUseActiveTerminal": true,
+    "liveServer.settings.port": 5501
+}

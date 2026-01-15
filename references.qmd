@@ -1,0 +1,12 @@
+---
+nocite: |
+  @*
+bibliography: references.bib
+---
+
+# References
+
+Although not all about ERGMs, the following list of references is an excellent resource for statistical inference in network science.
+
+::: {#refs}
+:::

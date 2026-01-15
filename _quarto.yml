@@ -4,16 +4,18 @@ project:
   render: 
     - "*/index.qmd"
     - "index.qmd"
+    - "references.qmd"
+    - "news.qmd"
 
 website:
-  title: Chisocnet Summer School 2024 -- ERGMs
+  title: Chisocnet Summer School 2026 -- ERGMs
+  repo-url: https://github.com/gvegayon/chisocnet-ss2024
+  repo-branch: main
+  repo-actions: ["edit", "issue", "source"]
+  
   
   navbar: 
     left:
-      - text: Home
-        href: index.qmd
-      - text: Fundamentals
-        href: 00-fundamentals/index.qmd
       - text: Introduction
         href: 01-intro-to-ergms/index.qmd
       - text: Advanced topics
@@ -21,13 +23,23 @@ website:
       - text: New developments
         href: 03-new-topics/index.qmd
     right:
-      - icon: github
-        href: https://github.com/gvegayon/chisocnet-ss2024
+      - text: Misc
+        menu: 
+        - text: Fundamentals
+          href: 00-fundamentals/index.qmd
+        - text: References
+          href: references.qmd
+        - text: News
+          href: news.qmd
+        - text: Applied Network Science with R (book)
+          href: https://book.ggvy.cl
+        - text: Applied HPC with R (book)
+          href: https://book-hpc.ggvy.cl
 
 format:
   html:
     html-math-method: katex
-    bibliography: ../references.bib
+    bibliography: references.bib
     toc: true
     number-sections: true
     embed-resources: true

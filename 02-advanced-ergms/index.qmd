@@ -1,6 +1,6 @@
 ---
 title: "Advanced ERGMs: Constraints"
-references: ../references.bib
+bibliography: ../references.bib
 ---
 
 \newcommand{\tpose}[1]{#1^{\mathbf{t}}}
@@ -13,7 +13,7 @@ references: ../references.bib
 
 # Introduction
 
-For this section, we will divein into ERGM constranints. Using constraints, you will be able to modify the sampling space of the model to things such as:
+For this section, we will dive into ERGM constraints. Using constraints, you will be able to modify the sampling space of the model to things such as:
 
 - Pool (multilevel) models.
 - Accounting for data generating process.
@@ -44,7 +44,7 @@ $$
 
 # Example 1: Pool (block-diagonal/multilevel) ERGM
 
-Nowadays, multi-network studies featuring a large sample of networks are easy to see. When we deal with multiple networks, there are usually two approaches to analyzing them: (a) estimate separate ERGMs and do a meta-analysis like in [ANN CITATION], or (b) fit a pooled ERGM. Here, we will follow the latter.
+Nowadays, multi-network studies featuring a large sample of networks are easy to see. When we deal with multiple networks, there are usually two approaches to analyzing them: (a) estimate separate ERGMs and do a meta-analysis, or (b) fit a pooled ERGM. Here, we will follow the latter.
 
 Pooled ERGMs resemble typical statistical methods. Assuming that the networks are independent, we can estimate a model like the following:
 
@@ -93,11 +93,11 @@ summary(ergmito(fivenets ~ edges + nodematch("female")))
 ```
 
 ::: {.callout .callout-tip title="Who cares about small networks?"}
-You may be wondering why someone would care about small networks. Well, the truth is that small networks are the fabric of societies (think about family nucleous,) and moreover, they are more complicated than you think. A directed graph with five vertices has about 1,000,000 possible configurations.
+You may be wondering why someone would care about small networks. Well, the truth is that small networks are the fabric of societies (think about family nucleus,) and moreover, they are more complicated than you think. A directed graph with five vertices has about 1,000,000 possible configurations.
 :::
 
 ::: {.callout .callout-note title="HPC in small networks"}
-The key of ERGMitos is that, with a small enough support size, we can skip using MCMC and simulation based approximations and directly calculate likelihoods for pooled models. This is extreamely powerful as it opens the door to a multiplicity of statistical methods.
+The key of ERGMitos is that, with a small enough support size, we can skip using MCMC and simulation-based approximations and directly calculate likelihoods for pooled models. This is extremely powerful as it opens the door to a multiplicity of statistical methods.
 :::
 
 
@@ -169,7 +169,7 @@ n <- 50
 n_egos <- 10
 net <- as.network(matrix(0, ncol = n, nrow = n), directed = TRUE)
 
-# Let's assing the groups
+# Let's assign the groups
 net %v% "is.ego" <- c(rep(TRUE, n_egos), rep(FALSE, n - n_egos))
 net %v% "is.ego"
 
