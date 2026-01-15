@@ -3,7 +3,7 @@ title: Fundamentals
 bibliography: ../references.bib
 ---
 
-Before jumping into network science details, we need to cover some fundamentals. I assume that most of the contents here are well known to you--we will be brief--but I want to ensure we are all on the same page.
+Before jumping into network science details, we need to cover some fundamentals. I assume that most of the contents here are well known to you—we will be brief—but I want to ensure we are all on the same page.
 
 # Programming with R
 
@@ -124,7 +124,7 @@ x_logical <- c(TRUE, FALSE, TRUE)
 # etc.
 ```
 
-R will coerce the data types to the most general type. For example, if we mix integers and doubles, R will coerce the integers into doubles. The coercion order is logical < integer < double < character
+R will coerce the data types to the most general type. For example, if we mix integers and doubles, R will coerce the integers to doubles. The coercion order is logical < integer < double < character
 
 ::: {.callout title="Question"}
 Why is the coercion order logical < integer < double < character?
@@ -328,7 +328,7 @@ pnorm(0, mean = 0, sd = 1)
 qnorm(0.5, mean = 0, sd = 1)
 ```
 
-Now, if we wanted to know what is the probability of observing a value smaller than -2 comming from a standard normal distribution, we would do:
+Now, if we wanted to know what is the probability of observing a value smaller than -2 coming from a standard normal distribution, we would do:
 
 ```{r}
 #| label: probability-distributions-pnorm

@@ -1,6 +1,6 @@
 ---
 title: Introduction to ERGMs
-references: ../references.bib
+bibliography: ../references.bib
 ---
 
 ```{r}

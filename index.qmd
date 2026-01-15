@@ -16,4 +16,4 @@ This is an ongoing project. The course is being developed and will be updated as
 
 # Code of Conduct
   
-Please note that the networks-udd2024 project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+Please note that the chisocnet-ss2024 project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

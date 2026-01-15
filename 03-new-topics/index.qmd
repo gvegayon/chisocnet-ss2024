@@ -29,7 +29,7 @@ footer: New topics in network modeling -- https://ggvy.cl
 
 # Part I: New models and extensions {background-color="black"}
 
-## Mutli-ERGMs
+## Multi-ERGMs
 
 ::: {.columns}
 
@@ -65,7 +65,7 @@ Ever wondered how to model influence exclusively?
 
 ::: {.column}
 - It provides greater flexibility to accommodate more complicated models and add extensions such as hierarchical models.
-![Figure 1 reproduced from @stivalaUsingSampledNetwork2020](alaam-diagram)
+![Figure 1 reproduced from @stivalaUsingSampledNetwork2020](alaam-diagram.png)
 :::
 
 :::
@@ -100,7 +100,7 @@ Ever wondered how to model influence exclusively?
 
 - Wang, Fellows, and Handcock recently published a re-introduction of the ERNM framework [@wangUnderstandingNetworksExponentialfamily2023].
 
-- ERNMs generalize ERGMs to incorporate behavior and are the cross-sectional causing of SIENA models.
+- ERNMs generalize ERGMs to incorporate behavior and are the cross-sectional cousin of SIENA models.
 
 \begin{align*}
 \text{ER\textbf{G}M}: & \Prergm(\bm{Y}=\bm{y} | \bm{X}=\bm{x}) \\
