@@ -1,16 +1,17 @@
 ---
 title: New topics in network modeling
-subtitle: 1st Chilean Summer School about Social Network Research
+subtitle: 2nd Chilean Summer School about Social Network Research
 author: George G. Vega Yon, Ph.D.
 institute:
   - The University of Utah
-  - Booz Allen Hamilton
 format: revealjs
 bibliography: ../references.bib
-date: 2024-01-12
+date: 2026-01-16
 slide-number: true
 html-math-method: katex
-footer: New topics in network modeling -- https://ggvy.cl
+embed-resources: true
+footer: New topics in network modeling -- ggvy.cl -- george.vegayon@utah.edu
+incremental: true
 ---
 
 ## Overview
@@ -21,7 +22,7 @@ footer: New topics in network modeling -- https://ggvy.cl
 \newcommand{\y}[0]{\bm{y}}
 \newcommand{\thetas}[0]{\bm{\theta}}
 \newcommand{\isone}[1]{\mathbb{1}\left(#1\right)}
-
+\renewcommand{\Pr}[1]{\mathrm{P}\left(#1\right)}
 
 - With **more data** and **computing resources**, the things that we can ask and do with networks are becoming increasingly (even more) exciting and complex.
 
@@ -36,7 +37,7 @@ footer: New topics in network modeling -- https://ggvy.cl
 ::: {.column}
 - In @krivitskyTaleTwoDatasets2023a, the authors present a start-to-finish pooled ERGM example featuring heterogeneous data sources.
 
-- They increase power and allow exploring heterogeneous effects across types/classes of networks.
+- They **increase power** and allow **exploring heterogeneous effects** across types/classes of networks.
 :::
 
 ::: {.column}
@@ -47,7 +48,11 @@ footer: New topics in network modeling -- https://ggvy.cl
 
 ## Statistical power of SOAM
 
-::: {.fragment style="font-size: 80%"}
+::: {style="font-size: 80%"}
+- Stochatsic Actor Oriented Models [SOAM] (or SIENA models) are used for the **co-evolution of behavior and network structure**.
+
+- The discussion around statistical power in Social Network Studies is relatively new.
+
 - **SOAM** @stadtfeldStatisticalPowerLongitudinal2020 proposes ways to perform power analysis for Siena models. At the center of their six-step approach is simulation.
 :::
 
@@ -57,9 +62,18 @@ footer: New topics in network modeling -- https://ggvy.cl
 
 Ever wondered how to model influence exclusively?
 
+::: {style="font-size:60%"}
+$$
+\Pr{\text{Sufficient Stats} | Features} \text{ vs } \Pr{Features | \text{Sufficient Stats}}
+$$
+:::
+
 ::: {.columns style="font-size: 0.8em;"}
 ::: {.column}
 - The Auto-Logistic Actor Attribute Model [ALAAM] is a model that allows us to do just that.
+
+- ALAAMs switch the focus from network structure to behavior influence by the network:
+
 - @koskinenBayesianAnalysisSocial2022 extends the ALAAM model to a Bayesian framework.
 :::
 
@@ -72,7 +86,9 @@ Ever wondered how to model influence exclusively?
 
 ## Relational Event Models
 
-- REMs are great for modeling sequences of ties (instead of panel or cross-sectional.)
+- REMs are great for modeling (timed) sequences of ties (instead of panel or cross-sectional).
+
+- Examples include: email exchanges, conflict events, and social interactions.
 
 -  @buttsRelationalEventModels2023 provides a general overview of Relational Event Models [REMs,] new methods, and future steps.
 
@@ -107,6 +123,10 @@ Ever wondered how to model influence exclusively?
 \text{ER\textbf{N}M}: & \Prergm(\bm{Y}=\bm{y}, \bm{X}=\bm{x})
 \end{align*}
 
+## Other new (and not so new) models and extensions
+
+
+
 # Part II: Shameless self-promotion {background-color="black"}
 
 ## ERGMitos: Small ERGMs
@@ -125,21 +145,47 @@ Ever wondered how to model influence exclusively?
 ::: {.column width=40%}
 - ERGMs are a particular case of Random Markov fields.
 
-- We can use the ERGM framework for modeling vectors of binary outcomes, e.g., the consumption of $\{tobacco, MJ, alcohol\}$
+- We can use the ERGM framework for modeling vectors of binary outcomes, *e.g.*, the consumption of \{tobacco, MJ, alcohol\}.
+
+- Moreover, similar to TERGMs (temporal ERGMs), we can model changes in these vectors over time.
 ::: 
 
-::: {.column width=60%}
+::: {.column width=55%}
 ![](defm.png)
 :::
 :::
+
+You can learn more in the project's website <https://uofuepibio.github.io/defm/>
 
 
 
 ## Power analysis in ERGMs
 
-- Using conditional ERGMs (closely related to constrained), we can do power analysis for network samples [@vegayonPowerMulticollinearitySmall2023].
+::: {style="font-size: 80%"}
+- Using conditional ERGMs, we can do power analysis for network samples [@vegayonPowerMulticollinearitySmall2023].
+
+- With multi-network studies becoming increasingly common, the question of how many networks we need is now more important (for doing science *and* funding science).
+:::
 
 ![Reproduced from @krivitskyRejoinderDiscussionTale2023](fig1-rejoinder.png)
+
+## Imaginary Network Motifs {.scrollable}
+
+::: {style="font-size:60%"}
+- Cognitive Social Structures [CSS] refers to individuals' perception of social networks (usually their own).
+
+- In CSS studies, people are asked about different types of ties in the form of "Does $i$ communicates/asks for advice/is friend of/etc $j$".
+:::
+
+![](tanaka-css-by-id1.jpg){width=100%}
+
+## Imaginary Network Motifs (cont.) {.scrollable}
+
+::: {style="font-size: 60%"}
+> [I]individuals completely conceive or drop reciprocal structures to maintain a balanced structure in their perceptions -- @tanakaImaginaryNetworkMotifs2024
+
+![Reproduced from @tanakaImaginaryNetworkMotifs2024](dyad-census-imaginary.jpg)
+:::
 
 ## Two-step estimation ERGMs
 

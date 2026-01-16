@@ -221,21 +221,21 @@
     "href": "03-new-topics/index.html#statistical-power-of-soam",
     "title": "New topics in network modeling",
     "section": "Statistical power of SOAM",
-    "text": "Statistical power of SOAM\n\n\nSOAM Stadtfeld et al. (2020) proposes ways to perform power analysis for Siena models. At the center of their six-step approach is simulation."
+    "text": "Statistical power of SOAM\n\n\nStochatsic Actor Oriented Models [SOAM] (or SIENA models) are used for the co-evolution of behavior and network structure.\nThe discussion around statistical power in Social Network Studies is relatively new.\nSOAM Stadtfeld et al. (2020) proposes ways to perform power analysis for Siena models. At the center of their six-step approach is simulation."
   },
   {
     "objectID": "03-new-topics/index.html#bayesian-alaam",
     "href": "03-new-topics/index.html#bayesian-alaam",
     "title": "New topics in network modeling",
     "section": "Bayesian ALAAM",
-    "text": "Bayesian ALAAM\nEver wondered how to model influence exclusively?\n\n\n\nThe Auto-Logistic Actor Attribute Model [ALAAM] is a model that allows us to do just that.\nKoskinen and Daraganova (2022) extends the ALAAM model to a Bayesian framework.\n\n\n\nIt provides greater flexibility to accommodate more complicated models and add extensions such as hierarchical models."
+    "text": "Bayesian ALAAM\nEver wondered how to model influence exclusively?\n\n\n\\mathrm{P}\\left(\\text{Sufficient Stats} | Features\\right) \\text{ vs } \\mathrm{P}\\left(Features | \\text{Sufficient Stats}\\right)\n\n\n\n\n\nThe Auto-Logistic Actor Attribute Model [ALAAM] is a model that allows us to do just that.\nALAAMs switch the focus from network structure to behavior influence by the network:\nKoskinen and Daraganova (2022) extends the ALAAM model to a Bayesian framework.\n\n\n\nIt provides greater flexibility to accommodate more complicated models and add extensions such as hierarchical models."
   },
   {
     "objectID": "03-new-topics/index.html#relational-event-models",
     "href": "03-new-topics/index.html#relational-event-models",
     "title": "New topics in network modeling",
     "section": "Relational Event Models",
-    "text": "Relational Event Models\n\nREMs are great for modeling sequences of ties (instead of panel or cross-sectional.)\nButts et al. (2023) provides a general overview of Relational Event Models [REMs,] new methods, and future steps.\n\n\nFigure 3 reproduced from Brandenberger (2020)"
+    "text": "Relational Event Models\n\nREMs are great for modeling (timed) sequences of ties (instead of panel or cross-sectional).\nExamples include: email exchanges, conflict events, and social interactions.\nButts et al. (2023) provides a general overview of Relational Event Models [REMs,] new methods, and future steps.\n\n\nFigure 3 reproduced from Brandenberger (2020)"
   },
   {
     "objectID": "03-new-topics/index.html#big-ergms",
@@ -252,6 +252,13 @@
     "text": "Exponential Random Network Models\n\nWang, Fellows, and Handcock recently published a re-introduction of the ERNM framework (Wang, Fellows, and Handcock 2023).\nERNMs generalize ERGMs to incorporate behavior and are the cross-sectional cousin of SIENA models.\n\n\\begin{align*}\n\\text{ER\\textbf{G}M}: & P_{\\mathcal{Y}, \\bm{\\theta}}(\\bm{Y}=\\bm{y} | \\bm{X}=\\bm{x}) \\\\\n\\text{ER\\textbf{N}M}: & P_{\\mathcal{Y}, \\bm{\\theta}}(\\bm{Y}=\\bm{y}, \\bm{X}=\\bm{x})\n\\end{align*}"
   },
   {
+    "objectID": "03-new-topics/index.html#other-new-and-not-so-new-models-and-extensions",
+    "href": "03-new-topics/index.html#other-new-and-not-so-new-models-and-extensions",
+    "title": "New topics in network modeling",
+    "section": "Other new (and not so new) models and extensions",
+    "text": "Other new (and not so new) models and extensions"
+  },
+  {
     "objectID": "03-new-topics/index.html#ergmitos-small-ergms",
     "href": "03-new-topics/index.html#ergmitos-small-ergms",
     "title": "New topics in network modeling",
@@ -263,14 +270,28 @@
     "href": "03-new-topics/index.html#discrete-exponential-family-models",
     "title": "New topics in network modeling",
     "section": "Discrete Exponential-family Models",
-    "text": "Discrete Exponential-family Models\n\n\n\nERGMs are a particular case of Random Markov fields.\nWe can use the ERGM framework for modeling vectors of binary outcomes, e.g., the consumption of \\{tobacco, MJ, alcohol\\}"
+    "text": "Discrete Exponential-family Models\n\n\n\nERGMs are a particular case of Random Markov fields.\nWe can use the ERGM framework for modeling vectors of binary outcomes, e.g., the consumption of {tobacco, MJ, alcohol}.\nMoreover, similar to TERGMs (temporal ERGMs), we can model changes in these vectors over time.\n\n\n\n\nYou can learn more in the project’s website https://uofuepibio.github.io/defm/"
   },
   {
     "objectID": "03-new-topics/index.html#power-analysis-in-ergms",
     "href": "03-new-topics/index.html#power-analysis-in-ergms",
     "title": "New topics in network modeling",
     "section": "Power analysis in ERGMs",
-    "text": "Power analysis in ERGMs\n\nUsing conditional ERGMs (closely related to constrained), we can do power analysis for network samples (Vega Yon 2023).\n\n\nReproduced from Krivitsky, Coletti, and Hens (2023b)"
+    "text": "Power analysis in ERGMs\n\n\nUsing conditional ERGMs, we can do power analysis for network samples (Vega Yon 2023).\nWith multi-network studies becoming increasingly common, the question of how many networks we need is now more important (for doing science and funding science).\n\n\n\nReproduced from Krivitsky, Coletti, and Hens (2023b)"
+  },
+  {
+    "objectID": "03-new-topics/index.html#imaginary-network-motifs",
+    "href": "03-new-topics/index.html#imaginary-network-motifs",
+    "title": "New topics in network modeling",
+    "section": "Imaginary Network Motifs",
+    "text": "Imaginary Network Motifs\n\n\nCognitive Social Structures [CSS] refers to individuals’ perception of social networks (usually their own).\nIn CSS studies, people are asked about different types of ties in the form of “Does i communicates/asks for advice/is friend of/etc j”."
+  },
+  {
+    "objectID": "03-new-topics/index.html#imaginary-network-motifs-cont.",
+    "href": "03-new-topics/index.html#imaginary-network-motifs-cont.",
+    "title": "New topics in network modeling",
+    "section": "Imaginary Network Motifs (cont.)",
+    "text": "Imaginary Network Motifs (cont.)\n\n\n[I]individuals completely conceive or drop reciprocal structures to maintain a balanced structure in their perceptions – Tanaka and Vega Yon (2024)\n\n\n\n\nReproduced from Tanaka and Vega Yon (2024)"
   },
   {
     "objectID": "03-new-topics/index.html#two-step-estimation-ergms",
@@ -298,7 +319,7 @@
     "href": "03-new-topics/index.html#references",
     "title": "New topics in network modeling",
     "section": "References",
-    "text": "References\n\n\n\n\nBrandenberger, Laurence. 2020. “Interdependencies in Conflict Dynamics: Analyzing Endogenous Patterns in Conflict Event Data Using Relational Event Models.” In Computational Conflict Research, edited by Emanuel Deutschmann, Jan Lorenz, Luis G. Nardin, Davide Natalini, and Adalbert F. X. Wilhelm, 67–80. Computational Social Sciences. Cham: Springer International Publishing. https://doi.org/10.1007/978-3-030-29333-8_4.\n\n\nButts, Carter T., Alessandro Lomi, Tom A. B. Snijders, and Christoph Stadtfeld. 2023. “Relational Event Models in Network Science.” Network Science 11 (2): 175–83. https://doi.org/10.1017/nws.2023.9.\n\n\nKarrer, Brian, and M. E. J. Newman. 2011. “Stochastic Blockmodels and Community Structure in Networks.” Physical Review E 83 (1): 016107. https://doi.org/10.1103/PhysRevE.83.016107.\n\n\nKoskinen, Johan, and Galina Daraganova. 2022. “Bayesian Analysis of Social Influence.” Journal of the Royal Statistical Society Series A: Statistics in Society 185 (4): 1855–81. https://doi.org/10.1111/rssa.12844.\n\n\nKrivitsky, Pavel N., Pietro Coletti, and Niel Hens. 2023a. “A Tale of Two Datasets: Representativeness and Generalisability of Inference for Samples of Networks.” Journal of the American Statistical Association 0 (0): 1–21. https://doi.org/10.1080/01621459.2023.2242627.\n\n\n———. 2023b. “Rejoinder to Discussion of ‘A Tale of Two Datasets: Representativeness and Generalisability of Inference for Samples of Networks’.” Journal of the American Statistical Association 118 (544): 2235–38. https://doi.org/10.1080/01621459.2023.2280383.\n\n\nStadtfeld, Christoph, Tom A. B. Snijders, Christian Steglich, and Marijtje van Duijn. 2020. “Statistical Power in Longitudinal Network Studies.” Sociological Methods & Research 49 (4): 1103–32. https://doi.org/10.1177/0049124118769113.\n\n\nStivala, Alex D., H. Colin Gallagher, David A. Rolls, Peng Wang, and Garry L. Robins. 2020. “Using Sampled Network Data With The Autologistic Actor Attribute Model.” arXiv. https://doi.org/10.48550/arXiv.2002.00849.\n\n\nStivala, Alex, Garry Robins, and Alessandro Lomi. 2020. “Exponential Random Graph Model Parameter Estimation for Very Large Directed Networks.” PLoS ONE 15 (1): 1–23. https://doi.org/10.1371/journal.pone.0227804.\n\n\nVega Yon, George G. 2023. “Power and Multicollinearity in Small Networks: A Discussion of ‘Tale of Two Datasets: Representativeness and Generalisability of Inference for Samples of Networks’ by Krivitsky, Coletti & Hens.” Journal Of The American Statistical Association.\n\n\nVega Yon, George G., Andrew Slaughter, and Kayla de la Haye. 2021. “Exponential Random Graph Models for Little Networks.” Social Networks 64 (August 2020): 225–38. https://doi.org/10.1016/j.socnet.2020.07.005.\n\n\nWang, Zeyi, Ian E. Fellows, and Mark S. Handcock. 2023. “Understanding Networks with Exponential-Family Random Network Models.” Social Networks, August, S0378873323000497. https://doi.org/10.1016/j.socnet.2023.07.003."
+    "text": "References\n\n\n\n\nBrandenberger, Laurence. 2020. “Interdependencies in Conflict Dynamics: Analyzing Endogenous Patterns in Conflict Event Data Using Relational Event Models.” In Computational Conflict Research, edited by Emanuel Deutschmann, Jan Lorenz, Luis G. Nardin, Davide Natalini, and Adalbert F. X. Wilhelm, 67–80. Computational Social Sciences. Cham: Springer International Publishing. https://doi.org/10.1007/978-3-030-29333-8_4.\n\n\nButts, Carter T., Alessandro Lomi, Tom A. B. Snijders, and Christoph Stadtfeld. 2023. “Relational Event Models in Network Science.” Network Science 11 (2): 175–83. https://doi.org/10.1017/nws.2023.9.\n\n\nKarrer, Brian, and M. E. J. Newman. 2011. “Stochastic Blockmodels and Community Structure in Networks.” Physical Review E 83 (1): 016107. https://doi.org/10.1103/PhysRevE.83.016107.\n\n\nKoskinen, Johan, and Galina Daraganova. 2022. “Bayesian Analysis of Social Influence.” Journal of the Royal Statistical Society Series A: Statistics in Society 185 (4): 1855–81. https://doi.org/10.1111/rssa.12844.\n\n\nKrivitsky, Pavel N., Pietro Coletti, and Niel Hens. 2023a. “A Tale of Two Datasets: Representativeness and Generalisability of Inference for Samples of Networks.” Journal of the American Statistical Association 0 (0): 1–21. https://doi.org/10.1080/01621459.2023.2242627.\n\n\n———. 2023b. “Rejoinder to Discussion of ‘A Tale of Two Datasets: Representativeness and Generalisability of Inference for Samples of Networks’.” Journal of the American Statistical Association 118 (544): 2235–38. https://doi.org/10.1080/01621459.2023.2280383.\n\n\nStadtfeld, Christoph, Tom A. B. Snijders, Christian Steglich, and Marijtje van Duijn. 2020. “Statistical Power in Longitudinal Network Studies.” Sociological Methods & Research 49 (4): 1103–32. https://doi.org/10.1177/0049124118769113.\n\n\nStivala, Alex D., H. Colin Gallagher, David A. Rolls, Peng Wang, and Garry L. Robins. 2020. “Using Sampled Network Data With The Autologistic Actor Attribute Model.” arXiv. https://doi.org/10.48550/arXiv.2002.00849.\n\n\nStivala, Alex, Garry Robins, and Alessandro Lomi. 2020. “Exponential Random Graph Model Parameter Estimation for Very Large Directed Networks.” PLoS ONE 15 (1): 1–23. https://doi.org/10.1371/journal.pone.0227804.\n\n\nTanaka, Kyosuke, and George G. Vega Yon. 2024. “Imaginary Network Motifs: Structural Patterns of False Positives and Negatives in Social Networks.” Social Networks 78 (July): 65–80. https://doi.org/10.1016/j.socnet.2023.11.005.\n\n\nVega Yon, George G. 2023. “Power and Multicollinearity in Small Networks: A Discussion of ‘Tale of Two Datasets: Representativeness and Generalisability of Inference for Samples of Networks’ by Krivitsky, Coletti & Hens.” Journal Of The American Statistical Association.\n\n\nVega Yon, George G., Andrew Slaughter, and Kayla de la Haye. 2021. “Exponential Random Graph Models for Little Networks.” Social Networks 64 (August 2020): 225–38. https://doi.org/10.1016/j.socnet.2020.07.005.\n\n\nWang, Zeyi, Ian E. Fellows, and Mark S. Handcock. 2023. “Understanding Networks with Exponential-Family Random Network Models.” Social Networks, August, S0378873323000497. https://doi.org/10.1016/j.socnet.2023.07.003."
   },
   {
     "objectID": "references.html",
